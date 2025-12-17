@@ -1,0 +1,9 @@
+language: csharp
+
+dotnet: 8.0
+
+script:
+
+- dotnet build
+
+- dotnet test
