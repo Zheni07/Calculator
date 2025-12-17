@@ -1,9 +1,9 @@
 language: csharp
 
-dotnet: 8.0
+mono: latest
+
+solution: Calculator.sln
 
 script:
-
-- dotnet build
-
-- dotnet test
+  - nuget restore Calcilator.sln
+  - msbuild Calcilator.sln /p:Configuration=Release
